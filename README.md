@@ -1,1 +1,125 @@
-# achadinhos-safira
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Links & Recomendações</title>
+  <style>
+    :root {
+      --bg: #09080c;
+      --card: #15121d;
+      --accent: #ff4da6;
+      --accent-2: #a855f7;
+      --text: #ffffff;
+      --muted: #b3adc4;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #271236, var(--bg) 65%);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .perfil {
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .perfil h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .perfil p {
+      margin: 6px 0 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .link-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 16px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .link-btn.destaque {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      border: none;
+    }
+
+    .seta {
+      font-size: 18px;
+    }
+
+    .secao {
+      margin-top: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="perfil">
+      <h1>@seu_usuario</h1>
+      <p>Conteúdo, achadinhos e indicações que eu uso</p>
+    </div>
+
+    <a class="link-btn destaque" href="https://exemplo.com" target="_blank" rel="noopener">
+      <span>🔥 Meu Destaque Principal</span>
+      <span class="seta">→</span>
+    </a>
+
+    <div class="secao">Achadinhos & Recomendações</div>
+
+    <a class="link-btn" href="https://exemplo.com" target="_blank" rel="noopener">
+      <span>✨ Achadinho 1 (ex: skincare / estética)</span>
+      <span class="seta">→</span>
+    </a>
+
+    <a class="link-btn" href="https://exemplo.com" target="_blank" rel="noopener">
+      <span>🎧 Achadinho 2 (ex: fone / setup)</span>
+      <span class="seta">→</span>
+    </a>
+
+    <a class="link-btn" href="https://exemplo.com" target="_blank" rel="noopener">
+      <span>🛍️ Achadinho 3 (ex: organização / rotina)</span>
+      <span class="seta">→</span>
+    </a>
+  </div>
+</body>
+</html>
